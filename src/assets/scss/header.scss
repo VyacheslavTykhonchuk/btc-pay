@@ -1,0 +1,63 @@
+
+.main__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-top: 30px;
+    &__wrap {
+        display: flex;
+        align-items: center;
+
+        //
+        margin-right: -21px;
+    }
+
+    &__nav {
+        font-family: 'FuturaPT';
+        font-weight: 500;
+
+        a {
+            color: #ffffff;
+
+            & + * {
+                margin-left: 45px;
+            }
+        }
+
+        & + * {
+            margin-left: 100px;
+        }
+    }
+
+    &__sign {
+        display: flex;
+        align-items: center;
+
+        &__in {
+            color: #ffffff;
+
+            & + * {
+                margin-left: 42px;
+            }
+        }
+
+        &__up {
+            color: black;
+            height: 37px;
+            width: 117px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: 3px solid white;
+            transition: all 0.4s;
+
+            &:hover {
+                background: transparent;
+                color: white;
+            }
+        }
+    }
+}
