@@ -1,16 +1,13 @@
-
 .main__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
     padding-top: 30px;
+
     &__wrap {
         display: flex;
         align-items: center;
-
-        //
-        margin-right: -21px;
     }
 
     &__nav {
