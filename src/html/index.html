@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Power FM</title>
-    <link rel="stylesheet" href="/dist/assets/css/fonts.css">
-    <link rel="stylesheet" href="/dist/assets/css/main.css">
-    <link rel="stylesheet" href="/dist/assets/css/normalize.css">
+    <title>BTC</title>
+    <link rel="stylesheet" href=" assets/css/fonts.css">
+    <link rel="stylesheet" href=" assets/css/main.css">
+    <link rel="stylesheet" href=" assets/css/normalize.css">
 </head>
 
 <body>
     <div class="wrap">
         <header class="main__header">
             <a class="main__header__logo">
-                <img src="/dist/assets/img/55.png" alt="">
+                <img src=" assets/img/55.png" alt="">
             </a>
             <div class="main__header__wrap">
                 <div class="main__header__nav">
@@ -24,8 +24,8 @@
                     <a href="" class="main__header__nav__link">Contact</a>
                 </div>
                 <div class="main__header__sign">
-                    <a href="" class="main__header__sign__in">Login</a>
-                    <a href="" class="main__header__sign__up">Register</a>
+                    <a href="" class="main__header__sign__in openModal" data-open-modal="login">Login</a>
+                    <a href="" class="main__header__sign__up openModal" data-open-modal="register">Register</a>
                 </div>
             </div>
         </header>
@@ -44,7 +44,7 @@
                     </a>
                 </div>
                 <div class="main__get_started__phone_img">
-                    <img src="/dist/assets/img/phone.png" alt="">
+                    <img src=" assets/img/phone.png" alt="">
                 </div>
                 <div class="main__get_started__wave">
                     <?xml version="1.0" encoding="UTF-8"?>
@@ -64,8 +64,34 @@
             </section>
         </main>
     </div>
-    <script src="/dist/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="/dist/assets/js/scripts.min.js"></script>
+    <div class="modal-container" data-modal="login">
+        <div class="modal">
+            <div class="modal__title">
+                Login
+            </div>
+            <form class="main-form" action="login">
+                <input type="email" class=" main-form__item" placeholder="Email">
+                <input type="password" class="main-form__item" placeholder="Password">
+                <input type="submit" class="btn btn_big" value="Login">
+            </form>
+        </div>
+    </div>
+    <div class="modal-container" data-modal="register">
+        <div class="modal">
+            <div class="modal__title">
+                Register
+            </div>
+            <form class="main-form" action="register">
+                <input type="text" class=" main-form__item" placeholder="First name">
+                <input type="text" class=" main-form__item" placeholder="Lasr name">
+                <input type="email" class=" main-form__item" placeholder="Email">
+                <input type="password" class="main-form__item" placeholder="Password">
+                <input type="submit" class="btn btn_big" value="Register">
+            </form>
+        </div>
+    </div>
+    <script src=" assets/js/jquery-3.3.1.min.js"></script>
+    <script src=" assets/js/scripts.min.js"></script>
 </body>
 
 </html>
