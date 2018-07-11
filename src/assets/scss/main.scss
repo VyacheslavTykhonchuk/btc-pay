@@ -16,7 +16,8 @@ a {
 }
 
 .wrap {
-    max-width: 1200px;
+    max-width: 1232px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -179,26 +180,42 @@ a {
 .main-section {
     position: relative;
     z-index: 5;
+
+    &_for-anyone {
+        z-index: 6;
+        margin-top: 430px;
+        background: white;
+        &+*{
+            margin-top: 300px;
+        }
+    }
 }
 
 .section-header {
     display: flex;
+    align-items: baseline;
+
+    & + * {
+        margin-top: 150px;
+    }
+
+    > * + * {
+        margin-left: 85px;
+    }
 
     &__num {
-        font-family: $medium;
+        font-weight: $medium;
         font-size: 20px;
         color: #000000;
         letter-spacing: 0;
-        line-height: 31px;
     }
 
     &__title {
-        font-family: $medium;
+        font-weight: $medium;
         font-size: 88px;
         color: #000000;
         letter-spacing: 0;
         text-align: center;
-        line-height: 48px;
     }
 }
 
@@ -208,8 +225,57 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
 
+    &_payments {
+        z-index: -1;
+        top: -650px;
+    }
+
     &_get-started {
         top: 313px;
         z-index: 0;
+    }
+}
+
+.featured-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 17%;
+
+    > div {
+        &:nth-child(n+3) {
+            margin-top: 123px;
+        }
+    }
+}
+
+.featured {
+    display: flex;
+
+    > * + * {
+        margin-left: 55px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin-top: 20px;
+
+        > * + * {
+            margin-top: 30px;
+        }
+    }
+
+    &__title {
+        font-weight: $demi;
+        color: black;
+        font-size: 38px;
+    }
+
+    &__desc {
+        font-weight: $medium;
+        color: $darkGray;
+        font-size: 28px;
     }
 }
