@@ -21,6 +21,15 @@
                 dots: false,
                 autoplay: true,
             });
+            $('.main-slider_cards').slick({
+                arrows: false,
+                infinite: true,
+                slidesToShow: 2.9,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: true,
+            });
+
         },
         initModal() {
 
