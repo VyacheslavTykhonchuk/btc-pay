@@ -10,6 +10,17 @@
 
         init() {
             btcPay.initModal();
+            btcPay.initSliders();
+        },
+        initSliders() {
+            $('.main-slider').slick({
+                arrows: false,
+                infinite: true,
+                slidesToShow: 6.8,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: true,
+            });
         },
         initModal() {
 

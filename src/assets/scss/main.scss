@@ -301,14 +301,31 @@ a {
         margin-top: 100px;
         display: flex !important;
         align-items: center;
+        width: 100%;
+
+        .slick-list {
+            height: 310px;
+            margin-left: -90px;
+            padding-left: 55px;
+        }
+
+        .slick-slide[aria-hidden="true"] {
+            opacity: .5;
+
+            &:first-child {
+                background: gray;
+            }
+        }
     }
 }
 
 .currency {
     position: relative;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     width: 100px;
+    transition: all 0.4s;
+    left: -10px;
 
     & + .currency {
         margin-left: 85px;
