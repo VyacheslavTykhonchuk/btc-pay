@@ -11,6 +11,23 @@
         init() {
             btcPay.initModal();
             btcPay.initSliders();
+            btcPay.initHoverCard();
+
+        },
+        initHoverCard() {
+            if (!$('.hoverCard').length) return false;
+            let card = $('.hoverCard');
+            card.each(function () {
+                $(this).on('mouseenter', function () {
+                    $(this).siblings().removeClass('hovered');
+
+                    $(this).addClass('hovered');
+
+                });
+                $(this).on('mouseleave', function () {
+                    $(this).removeClass('hovered');
+                });
+            });
         },
         initSliders() {
             $('.main-slider').slick({
@@ -29,6 +46,15 @@
                 dots: false,
                 autoplay: true,
             });
+            $('.slider-partners').slick({
+                arrows: false,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: true,
+            });
+
 
         },
         initModal() {
