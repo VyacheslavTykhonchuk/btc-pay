@@ -82,6 +82,7 @@
 
                     if (modal == dataOpenModal) {
                         $(this).addClass('modal-visible');
+                        $(this).siblings().removeClass('modal-visible');
                     }
                 }, closeModal()); // callback
             }
