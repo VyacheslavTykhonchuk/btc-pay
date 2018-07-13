@@ -1,8 +1,9 @@
 .main-footer {
     padding-bottom: 72px;
+    margin-top: -5px;
 
     &_white {
-        background: white;
+        background: white !important;
 
         a {
             color: $darkGray;
