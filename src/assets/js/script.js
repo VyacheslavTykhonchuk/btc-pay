@@ -36,6 +36,7 @@
                 slidesToShow: 6.8,
                 slidesToScroll: 1,
                 dots: false,
+                focusOnSelect: true,
                 autoplay: true,
             });
             $('.main-slider_cards').slick({
@@ -43,8 +44,18 @@
                 infinite: true,
                 slidesToShow: 2.9,
                 slidesToScroll: 1,
+                focusOnSelect: true,
                 dots: false,
                 autoplay: true,
+            });
+            $('.teamSlider').slick({
+                arrows: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                autoplay: true,
+                focusOnSelect: true,
             });
             $('.slider-partners').slick({
                 arrows: false,
@@ -52,6 +63,7 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 dots: false,
+                focusOnSelect: true,
                 autoplay: true,
             });
 

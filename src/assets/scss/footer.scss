@@ -1,15 +1,18 @@
 .main-footer {
-    background: white;
     padding-bottom: 72px;
 
-    a {
-        color: $darkGray;
-        font-weight: $medium;
-    }
+    &_white {
+        background: white;
 
-    .main__header__sign__up {
-        color: white;
-        background: #00DFE3;
-        font-weight: $light;
+        a {
+            color: $darkGray;
+            font-weight: $medium;
+        }
+
+        .main__header__sign__up {
+            color: white;
+            background: #00DFE3;
+            font-weight: $light;
+        }
     }
 }
