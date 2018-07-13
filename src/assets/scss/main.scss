@@ -1026,3 +1026,19 @@ a {
         }
     }
 }
+
+.blog_page {
+    background-image: initial;
+    background: white;
+}
+
+.article {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__title {}
+}
