@@ -12,8 +12,33 @@
             btcPay.initModal();
             btcPay.initSliders();
             btcPay.initHoverCard();
+            btcPay.initArticles();
+        },
+
+        initArticles() {
+            if (!$('.openArticle').length) return false;
+            let open = $('.openArticle'),
+                close = $('.closeArticle');
+
+            close.each(function () {
+                
+                $(this).on('click', function () {
+                    $(this).closest('.article').removeClass('article_opened');
+                    $('body').removeClass('no-overflow');
+                });
+            });
+
+            open.each(function () {
+                $(this).on('click', function (e) {
+                    e.preventDefault();
+                    $(this).siblings('.article').addClass('article_opened');
+                    $('body').addClass('no-overflow');
+                });
+
+            });
 
         },
+
         initHoverCard() {
             if (!$('.hoverCard').length) return false;
             let card = $('.hoverCard');
