@@ -21,7 +21,7 @@
                 close = $('.closeArticle');
 
             close.each(function () {
-                
+
                 $(this).on('click', function () {
                     $(this).closest('.article').removeClass('article_opened');
                     $('body').removeClass('no-overflow');
@@ -127,7 +127,7 @@
             function closeModal() {
                 modal.each(function () {
                     $(this).on('click', function (e) {
-                        if (e.target !== e.currentTarget) return false;
+                        if (e.target !== e.currentTarget) return true;
                         $(this).removeClass('modal-visible');
                     });
                     $(document).keyup(function (e) {
