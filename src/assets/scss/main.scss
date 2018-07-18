@@ -1,8 +1,15 @@
 body {
     background-image: linear-gradient(180deg, hsl(193, 100%, 48%) -5%, hsl(181, 100%, 46%) 10%, hsl(182, 100%, 46%) 20%, hsl(193, 100%, 48%) 100%);
     font-family: 'FuturaPT';
-    width: 100vw;
+    max-width: 100vw;
     overflow-x: hidden;
+}
+
+@media (max-width: 430px) {
+    html {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
 }
 
 * {
@@ -48,6 +55,10 @@ a {
         padding-left: 7px;
         position: relative;
 
+        @media (max-width: 430px) {
+            margin: 74px 0 0 0;
+        }
+
         &__content {
             color: white;
             position: relative;
@@ -59,8 +70,16 @@ a {
                 line-height: 77px;
                 margin: 0;
 
+                @media (max-width: 430px) {
+                    font-size: 30px;
+                }
+
                 & + * {
                     margin-top: 60px;
+
+                    @media (max-width: 430px) {
+                        margin-top: 30px;
+                    }
                 }
             }
 
@@ -265,6 +284,10 @@ a {
 
     & + * {
         margin-top: 150px;
+
+        @media (max-width: 430px) {
+            margin-top: 50px;
+        }
     }
 
     & + .section-desc {
@@ -288,6 +311,10 @@ a {
         color: #000000;
         letter-spacing: 0;
         text-align: center;
+
+        @media (max-width: 430px) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -300,11 +327,19 @@ a {
     &_bot {
         bottom: -1%;
         z-index: -1;
+
+        @media (max-width: 430px) {
+            bottom: 21%;
+        }
     }
 
     &_top {
         top: -75px;
         z-index: -1;
+
+        @media (max-width: 430px) {
+            top: -130px;
+        }
     }
 
     &_step {
@@ -760,6 +795,11 @@ a {
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 430px) {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
     &_about {
         margin-top: 300px;
         width: 70%;
@@ -770,13 +810,28 @@ a {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        flex-wrap: wrap;
+
+        @media (max-width: 430px) {
+            > * + * {
+                margin-top: 40px;
+            }
+        }
 
         & + * {
             margin-top: 65px;
+
+            @media (max-width: 430px) {
+                margin-top: 40px;
+            }
         }
 
         .feedback__input {
             width: calc((100% / 2) - 34px);
+
+            @media (max-width: 430px) {
+                width: 100%;
+            }
         }
     }
 
@@ -796,6 +851,13 @@ a {
         border: none;
         transition: all 0.4s;
 
+        @media (max-width: 430px) {
+            width: 120px;
+            height: 36px;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
         &_white {
             color: $darkGray;
             background: white;
@@ -814,6 +876,10 @@ a {
             border-bottom: 2px solid $darkGray;
             line-height: 1.4;
             background: transparent;
+
+            @media (max-width: 430px) {
+                border-width: 1px;
+            }
         }
 
         &-title {
@@ -821,6 +887,10 @@ a {
             font-size: 14px;
             color: $darkGray;
             letter-spacing: 0;
+
+            @media (max-width: 430px) {
+                font-size: 10px;
+            }
 
             & + * {
                 margin-top: 12px;
@@ -990,11 +1060,21 @@ a {
 .contacts {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 430px) {
+        > .contact {
+            width: 100%;
+        }
+    }
 }
 
 .contact-feedback {
     margin-top: 505px;
     padding-bottom: 150px;
+
+    @media (max-width: 430px) {
+        margin-top: 305px;
+    }
 
     .feedback {
         max-width: 70%;
@@ -1005,12 +1085,25 @@ a {
     display: flex;
     flex-direction: column;
 
+    @media (max-width: 430px) {
+        width: 50%;
+    }
+
     &-wrap {
         display: flex;
         margin-top: 70px;
 
+        @media (max-width: 430px) {
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
         > * + * {
             margin-left: 100px;
+
+            @media (max-width: 430px) {
+                margin-left: 0;
+            }
         }
     }
 
@@ -1020,6 +1113,10 @@ a {
         letter-spacing: 0.83px;
         margin: 0;
         color: white;
+
+        @media (max-width: 430px) {
+            font-size: 12px;
+        }
 
         & + * {
             margin-top: 30px;
@@ -1031,8 +1128,16 @@ a {
         font-weight: $regular;
         color: white;
 
+        @media (max-width: 430px) {
+            font-size: 15px;
+        }
+
         &_big {
             font-size: 40px;
+
+            @media (max-width: 430px) {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -1051,6 +1156,12 @@ a {
         letter-spacing: 0.35px;
         line-height: 1;
 
+        @media (max-width: 430px) {
+            font-size: 12px;
+            line-height: 1.4;
+            font-weight: $medium;
+        }
+
         & + * {
             margin-top: 1em;
         }
@@ -1064,6 +1175,10 @@ a {
     position: relative;
     z-index: 9;
     flex-wrap: wrap;
+
+    @media (max-width: 430px) {
+        margin-top: 30px;
+    }
 }
 
 .article {
@@ -1075,19 +1190,32 @@ a {
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.11);
     z-index: 99;
     background: white;
-    transform: translate(0%, -100%);
+    transform: translate(0%, -100%) scale(0.5);
     visibility: hidden;
     max-height: calc(100% - 440px);
     overflow: scroll;
     transition: all 0.4s;
 
+    @media (max-width: 430px) {
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        max-height: 100%;
+    }
+
     &_opened {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(1);
         visibility: visible;
     }
 
     &__icon {
         cursor: pointer;
+
+        @media (max-width: 430px) {
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
     }
 
     &__header {
@@ -1095,9 +1223,14 @@ a {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        box-sizing: border-box;
 
         & + * {
             margin-top: 116px;
+
+            @media (max-width: 430px) {
+                margin-top: 26px;
+            }
         }
     }
 
@@ -1108,6 +1241,10 @@ a {
         letter-spacing: 0.46px;
         line-height: 1;
         margin: 0;
+
+        @media (max-width: 430px) {
+            font-size: 20px;
+        }
     }
 
     &__img {
@@ -1117,8 +1254,16 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
 
+        @media (max-width: 430px) {
+            height: 180px;
+        }
+
         & + * {
             margin-top: 100px;
+
+            @media (max-width: 430px) {
+                margin-top: 38px;
+            }
         }
     }
 }
@@ -1128,13 +1273,16 @@ a {
     flex-direction: column;
     width: calc((100% / 2) - 40px);
 
+    @media (max-width: 430px) {
+        width: 100%;
+
+        & + * {
+            margin-top: 70px;
+        }
+    }
+
     &:nth-child(n+3) {
         margin-top: 170px;
-
-        .main-btn {
-            background: #fff;
-            color: #00DAEF;
-        }
     }
 
     &__img {
@@ -1144,6 +1292,10 @@ a {
         height: 290px;
         width: 60%;
         background-position: center;
+
+        @media (max-width: 430px) {
+            height: 190px;
+        }
 
         & + * {
             margin-top: 40px;
@@ -1155,6 +1307,10 @@ a {
         font-size: 31px;
         color: $darkGray;
 
+        @media (max-width: 430px) {
+            font-size: 15px;
+        }
+
         & + * {
             margin-top: 30px;
         }
@@ -1165,9 +1321,17 @@ a {
         font-size: 21px;
         color: $darkGray;
 
+        @media (max-width: 430px) {
+            font-size: 12px;
+        }
+
         p {
             margin: 0;
             line-height: 27px;
+
+            @media (max-width: 430px) {
+                line-height: 1.4;
+            }
 
             & + * {
                 margin-top: 1em;
@@ -1176,6 +1340,10 @@ a {
 
         & + * {
             margin-top: 90px;
+
+            @media (max-width: 430px) {
+                margin-top: 40px;
+            }
         }
     }
 }
@@ -1196,6 +1364,17 @@ a {
     transition: all 0.4s;
     transform: translate3d(0, 0, 0) scale(1);
     line-height: 100%;
+
+    &_white {
+        background: #fff;
+        color: #00DAEF;
+    }
+
+    @media (max-width: 430px) {
+        width: 128px;
+        height: 35px;
+        font-size: 12px;
+    }
 
     &:hover {
         transform: translate3d(0, 0, 0) scale(0.98);

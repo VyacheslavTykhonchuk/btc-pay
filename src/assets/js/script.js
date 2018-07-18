@@ -13,8 +13,16 @@
             btcPay.initSliders();
             btcPay.initHoverCard();
             btcPay.initArticles();
+            btcPay.initBurger();
         },
+        initBurger() {
+            let menu = $('.mobileOpen');
 
+            menu.on('click', function () {
+                $('.main__header__nav').toggleClass('visible');
+                $(this).toggleClass('active');
+            });
+        },
         initArticles() {
             if (!$('.openArticle').length) return false;
             let open = $('.openArticle'),
