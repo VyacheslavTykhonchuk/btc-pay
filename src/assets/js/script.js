@@ -89,6 +89,18 @@
                 dots: false,
                 autoplay: true,
                 focusOnSelect: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1.5,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             });
             $('.slider-partners').slick({
                 arrows: false,

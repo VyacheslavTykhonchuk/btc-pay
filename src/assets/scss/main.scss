@@ -11,8 +11,55 @@ body {
         overflow-x: hidden;
     }
 
+    .blog {
+        .main-wave_top {
+            top: -155px;
+        }
+    }
+
     .contact_page {
+        .main-wave_get-started {
+            top: -5px;
+            z-index: 0;
+        }
+
+        .contact-feedback {
+            margin-top: 100px;
+
+            .wrap {
+                padding: 0 16px;
+            }
+        }
+    }
+
+    .contact_page, .about_page {
         overflow: hidden;
+    }
+
+    .page-main, .main-section {
+        padding-left: 0 !important;
+
+        > .wrap {
+            padding: 0;
+        }
+    }
+
+    .about_page {
+        .main-wave_get-started {
+            top: 100px;
+        }
+
+        .main-section_team .main-wave {
+            top: 600px;
+            max-height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+
+            @media (max-width: 321px) {
+                top: 540px;
+            }
+        }
     }
 }
 
@@ -76,6 +123,7 @@ a {
 
                 @media (max-width: 430px) {
                     font-size: 30px;
+                    line-height: 1;
                 }
 
                 & + * {
@@ -93,12 +141,20 @@ a {
 
                 &_wide {
                     max-width: 80%;
+
+                    @media (max-width: 430px) {
+                        max-width: 100%;
+                    }
                 }
 
                 p {
                     font-weight: 500;
                     font-size: 20px;
                     line-height: 1.5;
+
+                    @media (max-width: 430px) {
+                        font-size: 12px;
+                    }
                 }
 
                 & + * {
@@ -112,6 +168,11 @@ a {
             position: absolute;
             right: 9px;
             top: -75px;
+
+            @media (max-width: 430px) {
+                right: 0;
+                transform: translate(56%, 0);
+            }
         }
     }
 }
@@ -224,6 +285,10 @@ a {
 
     &_team {
         margin-top: 400px;
+
+        @media (max-width: 430px) {
+            margin-top: 180px;
+        }
 
         .main-wave {
             top: 400px;
@@ -808,6 +873,12 @@ a {
         margin-top: 300px;
         width: 70%;
         margin-bottom: 250px;
+
+        @media (max-width: 430px) {
+            margin-bottom: 60px;
+            width: 100%;
+            margin-top: 100px;
+        }
     }
 
     &__inputs-row {
@@ -919,9 +990,18 @@ a {
         font-weight: $demi;
         color: white;
 
+        @media (max-width: 430px) {
+            font-size: 30px;
+        }
+
         & + * {
             margin-left: 25px;
         }
+    }
+
+    &__icon {
+        width: 27px;
+        height: 27px;
     }
 }
 
@@ -929,6 +1009,20 @@ a {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+
+    @media (max-width: 430px) {
+        .slick-track {
+            left: -117px;
+
+            @media (max-width: 376px) {
+                left: -110px;
+
+                @media (max-width: 321px) {
+                    left: -94px;
+                }
+            }
+        }
+    }
 
     .slick-arrow {
         &.slick-prev {
@@ -981,6 +1075,13 @@ a {
     transition: all 0.4s;
     opacity: .5;
 
+    @media (max-width: 430px) {
+        width: 160px;
+        padding: 20px;
+        padding-bottom: 110px;
+        border-width: 2px;
+    }
+
     & + * {
         margin-left: 40px;
     }
@@ -988,6 +1089,10 @@ a {
     &.slick-current {
         border: 4px solid $lightBlue;
         opacity: 1;
+
+        @media (max-width: 430px) {
+            border-width: 2px;
+        }
 
         &::before {
             opacity: 0;
@@ -1010,6 +1115,13 @@ a {
         font-size: 24px;
         height: 70px;
         box-shadow: 0 8px 34px 0 rgba(19, 164, 181, 0.18);
+
+        @media (max-width: 430px) {
+            width: calc(100% - 40px);
+            font-size: 12px;
+            height: 35px;
+            bottom: 25px;
+        }
     }
 
     &::before {
@@ -1021,6 +1133,11 @@ a {
         width: 4px;
         background: $lightBlue;
         transition: all 0.3s;
+
+        @media (max-width: 430px) {
+            width: 2px;
+            height: 120px;
+        }
     }
 
     &__img {
@@ -1030,6 +1147,15 @@ a {
         background-position: center;
         border-radius: 8px;
         background-size: contain;
+
+        @media (max-width: 430px) {
+            height: 220px;
+            background-size: cover;
+
+            @media (max-width: 321px) {
+                height: 145px;
+            }
+        }
 
         & + * {
             margin-top: 52px;
@@ -1042,6 +1168,10 @@ a {
         font-size: 31px;
         color: $darkGray;
 
+        @media (max-width: 430px) {
+            font-size: 16px;
+        }
+
         & + * {
             margin-top: 8px;
         }
@@ -1052,6 +1182,10 @@ a {
         font-weight: $medium;
         font-size: 21px;
         color: $darkGray;
+
+        @media (max-width: 430px) {
+            font-size: 10px;
+        }
     }
 }
 
