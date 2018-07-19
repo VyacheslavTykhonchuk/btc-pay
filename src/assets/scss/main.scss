@@ -700,6 +700,11 @@ a {
     left: 50%;
     transform: translate(-50%, 0);
 
+    @media (min-width: 1445px) {
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
     &_partners-mobile {
         top: -65px;
 
@@ -1095,7 +1100,27 @@ a {
     &__img {
         width: 90px;
         height: 90px;
-        object-fit: contain;
+        fill: #2DE6EF;
+        stroke: #2DE6EF;
+
+        &_fix {
+            #Path-9 {
+                fill: transparent;
+                stroke: #2DE6EF;
+
+                &:last-child {
+                    fill: #2DE6EF;
+                }
+            }
+
+            #Path-10 {
+                stroke: transparent;
+            }
+        }
+
+        * {
+            fill: #2DE6EF;
+        }
 
         & + * {
             margin-left: 55px;
@@ -1142,8 +1167,15 @@ a {
         }
 
         svg {
-            path {
-                fill: white;
+            fill: #fff;
+            stroke: #fff;
+
+            #Path-9 {
+                stroke: white;
+            }
+
+            * {
+                fill: #fff;
             }
         }
 
