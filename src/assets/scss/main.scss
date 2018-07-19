@@ -249,6 +249,11 @@ body {
                         height: 118px;
                         align-items: center;
 
+                        &__content {
+                            width: 100%;
+                            padding-left: 12%;
+                        }
+
                         & + * {
                             margin-top: 12px;
                         }
@@ -262,6 +267,21 @@ body {
                             height: 45px;
                             object-fit: contain;
                             opacity: 1;
+
+                            * {
+                                fill: #fff !important;
+                                stroke: #fff !important;
+                            }
+
+                            &_fix {
+                                #Path-9 {
+                                    fill: transparent !important;
+                                }
+
+                                #Path-10 {
+                                    stroke: transparent !important;
+                                }
+                            }
                         }
 
                         &__text {
