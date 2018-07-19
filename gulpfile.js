@@ -61,7 +61,7 @@ gulp.task('sass', function () {
 gulp.task('scripts', function () {
     gulp.src(source.js)
         .pipe(concat('scripts.min.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js'))
         .pipe(livereload({ start: true }));
 });
