@@ -27,7 +27,15 @@
         }
     }
 
-    .main__header__nav, .main__header__sign {
-        display: none;
+    &_mob-gray {
+        @media (max-width: 430px) {
+            background: hsl(220, 37%, 97%) !important;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .main__header__nav, .main__header__sign {
+            display: none;
+        }
     }
 }

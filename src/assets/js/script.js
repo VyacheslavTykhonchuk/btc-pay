@@ -71,6 +71,25 @@
                 dots: false,
                 focusOnSelect: true,
                 autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3.666,
+                            slidesToScroll: 1,
+                            focusOnSelect: false,
+                        }
+
+                    },
+                    {
+                        breakpoint: 321,
+                        settings: {
+                            slidesToShow: 3.7,
+                            slidesToScroll: 1,
+                            focusOnSelect: false
+                        }
+                    }
+                ]
             });
             $('.main-slider_cards').slick({
                 arrows: false,
@@ -80,7 +99,29 @@
                 focusOnSelect: true,
                 dots: false,
                 autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1.5,
+                            slidesToScroll: 1
+                        }
+
+                    }
+                ]
             });
+            if (btcPay.winWidth < 430) {
+                $('.billing').slick({
+                    arrows: false,
+                    infinite: true,
+                    slidesToShow: 1.5,
+                    slidesToScroll: 1,
+                    focusOnSelect: true,
+                    dots: false,
+                    autoplay: true,
+                });
+            }
+
             $('.teamSlider').slick({
                 arrows: true,
                 infinite: true,
@@ -97,9 +138,6 @@
                             slidesToScroll: 1
                         }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
             });
             $('.slider-partners').slick({
@@ -110,6 +148,18 @@
                 dots: false,
                 focusOnSelect: true,
                 autoplay: true,
+                variableWidth: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            autoplay: true,
+
+                        }
+                    }
+                ]
             });
 
 
