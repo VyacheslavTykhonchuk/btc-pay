@@ -70,7 +70,7 @@
                 slidesToScroll: 1,
                 dots: false,
                 focusOnSelect: true,
-                // autoplay: true,
+                autoplay: true,
                 responsive: [
                     {
                         breakpoint: 480,
