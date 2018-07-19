@@ -790,6 +790,12 @@ a {
         color: $darkGray;
         font-size: 28px;
     }
+
+    @media (min-width: 430px) {
+        &__img {
+            min-width: 105px;
+        }
+    }
 }
 
 .main-slider {

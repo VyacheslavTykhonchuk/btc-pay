@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="80px" viewBox="0 0 81 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon1">
+            <rect id="Rectangle-13" stroke="#00E1EC" stroke-width="8" x="56" y="4" width="21" height="28" rx="10.5"></rect>
+            <rect id="Rectangle-13" stroke="#00E1EC" stroke-width="8" x="56" y="48" width="21" height="28" rx="10.5"></rect>
+            <circle id="Oval" fill="#00E1EC" cx="4.5" cy="31.5" r="4.5"></circle>
+            <circle id="Oval" fill="#00E1EC" cx="41.5" cy="75.5" r="4.5"></circle>
+            <rect id="Rectangle-13" stroke="#00E1EC" stroke-width="8" x="21" y="4" width="21" height="28" rx="10.5"></rect>
+            <polygon id="Path-2" fill="#00E1EC" points="1.01197518 55.9802661 1.01197518 64.1362297 16.9833094 64.1362297 16.9833094 76.2740876 36.7073109 60.1450231 16.9833094 44.1304567 16.9833094 55.9635393"></polygon>
+        </g>
+    </g>
+</svg>

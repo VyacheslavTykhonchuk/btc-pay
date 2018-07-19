@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="82px" viewBox="0 0 77 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>icon4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon4">
+            <text id="5" font-family="CoreSansG-Black, Core Sans G" font-size="26" font-weight="700" letter-spacing="-0.162500009" fill="#00E1EC">
+                <tspan x="18" y="35">5</tspan>
+            </text>
+            <polygon id="Path-2" fill="#00E1EC" points="0 65.5849484 0 72.182058 12.9756083 72.182058 12.9756083 82 29 68.953693 12.9756083 56 12.9756083 65.5714186"></polygon>
+            <polygon id="Path-2" fill="#00E1EC" transform="translate(62.500000, 13.000000) scale(-1, 1) translate(-62.500000, -13.000000) " points="48 9.58494839 48 16.182058 60.9756083 16.182058 60.9756083 26 77 12.953693 60.9756083 0 60.9756083 9.57141864"></polygon>
+            <circle id="Oval-3" stroke="#00E1EC" stroke-width="6" cx="26" cy="28" r="22"></circle>
+            <polygon id="Path-7" fill="#00E1EC" points="31.8099616 58.5654902 31.8099616 78.5671449 75.4591869 78.5671449 75.4591869 34.7779031 55.970305 34.7779031 54.1238233 40.9850988 69.1289801 40.9850988 69.1289801 72.2549724 37.9143951 72.2549724 37.9143951 56.723806"></polygon>
+            <rect id="Rectangle-15" fill="#00E1EC" x="47" y="47" width="13" height="6" rx="3"></rect>
+        </g>
+    </g>
+</svg>
