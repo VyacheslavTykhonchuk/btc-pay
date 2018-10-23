@@ -63,6 +63,24 @@
         &__in {
             color: #ffffff;
 
+            @media (max-width: 430px) {
+                border-radius: 0;
+                background: transparent;
+                color: white;
+                border: none;
+                border-top: 1px solid white;
+                font-size: 10px;
+                max-width: 72px;
+                width: 117px;
+                height: 37px;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                right: 0;
+                transform: translate(0, 100%);
+            }
+
             & + * {
                 margin-left: 42px;
             }
@@ -165,6 +183,10 @@
             .main__header__sign__in {
                 border-top: 1px solid #fff;
                 padding-top: 16px;
+
+                @media (min-width: 430px) {
+                    display: none;
+                }
             }
 
             &.visible {

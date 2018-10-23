@@ -836,7 +836,7 @@ a {
             padding-left: 55px;
         }
 
-        .slick-slide[aria-hidden="true"] {
+        .slick-slide[aria-hidden='true'] {
             opacity: .5;
 
             &:first-child {
@@ -1899,4 +1899,13 @@ a {
 
 #p1, #p2 {
     width: 100%;
+}
+
+.main__header__nav {
+    .main__header__sign__in {
+
+        @media (min-width: 430px) {
+            display: none;
+        }
+    }
 }
