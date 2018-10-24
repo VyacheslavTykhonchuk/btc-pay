@@ -122,6 +122,8 @@ body {
                 .main-slider_currency {
                     margin-top: 50px !important;
 
+                    
+
                     .slick-list {
                         margin-left: 0;
                         padding-left: 0;
@@ -829,7 +831,9 @@ a {
         display: flex !important;
         align-items: center;
         width: 100%;
-
+        @media (min-width: 1445px) {
+            margin-left: 0 !important;
+        }
         .slick-list {
             height: 310px;
             margin-left: -90px;
@@ -1903,7 +1907,6 @@ a {
 
 .main__header__nav {
     .main__header__sign__in {
-
         @media (min-width: 430px) {
             display: none;
         }
