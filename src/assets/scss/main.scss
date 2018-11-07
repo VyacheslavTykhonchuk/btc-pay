@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 800px) {
     html {
         max-width: 100vw;
         overflow-x: hidden;
@@ -122,8 +122,6 @@ body {
                 .main-slider_currency {
                     margin-top: 50px !important;
 
-                    
-
                     .slick-list {
                         margin-left: 0;
                         padding-left: 0;
@@ -161,7 +159,9 @@ body {
                     margin-top: 50px !important;
 
                     .slick-track {
-                        left: -33% !important;
+                        @media (max-width: 430px) {
+                            left: -33% !important;
+                        }
                     }
                 }
 
@@ -205,7 +205,7 @@ body {
                 .billing-plan {
                     display: flex !important;
                     padding: 30px 22px 100px;
-                    min-height: 450px;
+                    min-height: 250px;
 
                     & + * {
                         margin-left: 18px;
@@ -435,7 +435,7 @@ a {
         padding-left: 7px;
         position: relative;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             margin: 74px 0 0 0;
         }
 
@@ -450,7 +450,7 @@ a {
                 line-height: 77px;
                 margin: 0;
 
-                @media (max-width: 430px) {
+                @media (max-width: 800px) {
                     font-size: 30px;
                     line-height: 1;
                 }
@@ -458,7 +458,7 @@ a {
                 & + * {
                     margin-top: 60px;
 
-                    @media (max-width: 430px) {
+                    @media (max-width: 800px) {
                         margin-top: 30px;
                     }
                 }
@@ -471,7 +471,7 @@ a {
                 &_wide {
                     max-width: 80%;
 
-                    @media (max-width: 430px) {
+                    @media (max-width: 800px) {
                         max-width: 100%;
                     }
                 }
@@ -481,7 +481,7 @@ a {
                     font-size: 20px;
                     line-height: 1.5;
 
-                    @media (max-width: 430px) {
+                    @media (max-width: 800px) {
                         font-size: 12px;
                     }
                 }
@@ -498,7 +498,7 @@ a {
             right: 9px;
             top: -75px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 right: 0;
                 transform: translate(56%, 0);
             }
@@ -615,7 +615,7 @@ a {
     &_team {
         margin-top: 400px;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             margin-top: 180px;
         }
 
@@ -657,7 +657,7 @@ a {
 
     &_for-anyone {
         z-index: 6;
-        margin-top: 430px;
+        margin-top: 400px;
         background: white;
 
         & + * {
@@ -683,7 +683,7 @@ a {
     & + * {
         margin-top: 150px;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             margin-top: 50px;
         }
     }
@@ -710,7 +710,7 @@ a {
         letter-spacing: 0;
         text-align: center;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 30px;
         }
     }
@@ -730,7 +730,7 @@ a {
     &_partners-mobile {
         top: -65px;
 
-        @media (min-width: 430px) {
+        @media (min-width: 800px) {
             display: none;
         }
     }
@@ -739,7 +739,7 @@ a {
         bottom: -1%;
         z-index: -1;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             bottom: 21%;
         }
     }
@@ -748,7 +748,7 @@ a {
         top: -75px;
         z-index: -1;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             top: -130px;
         }
     }
@@ -818,7 +818,7 @@ a {
         font-size: 28px;
     }
 
-    @media (min-width: 430px) {
+    @media (min-width: 800px) {
         &__img {
             min-width: 105px;
         }
@@ -831,9 +831,12 @@ a {
         display: flex !important;
         align-items: center;
         width: 100%;
+
         @media (min-width: 1445px) {
             margin-left: 0 !important;
+            margin-top: 37px !important;
         }
+
         .slick-list {
             height: 310px;
             margin-left: -90px;
@@ -1026,6 +1029,9 @@ a {
 
         & + * {
             margin-top: 40px;
+            @media (max-width: 800px) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -1036,6 +1042,10 @@ a {
 
         & + * {
             margin-top: 20px;
+
+            @media (max-width: 800px) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -1057,6 +1067,10 @@ a {
 
             &_margin-top {
                 margin-top: 20px;
+
+                @media (max-width: 800px) {
+                    margin-top: 0;
+                }
             }
         }
 
@@ -1069,6 +1083,10 @@ a {
 
             & + * {
                 margin-top: 40px;
+
+                @media (max-width: 800px) {
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -1241,7 +1259,7 @@ a {
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         width: 100%;
         max-width: 100% !important;
     }
@@ -1251,7 +1269,7 @@ a {
         width: 70%;
         margin-bottom: 250px;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             margin-bottom: 60px;
             width: 100%;
             margin-top: 100px;
@@ -1264,7 +1282,7 @@ a {
         width: 100%;
         flex-wrap: wrap;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             > * + * {
                 margin-top: 40px;
             }
@@ -1273,7 +1291,7 @@ a {
         & + * {
             margin-top: 65px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 margin-top: 40px;
             }
         }
@@ -1281,7 +1299,7 @@ a {
         .feedback__input {
             width: calc((100% / 2) - 34px);
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 width: 100%;
             }
         }
@@ -1303,7 +1321,7 @@ a {
         border: none;
         transition: all 0.4s;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             width: 120px;
             height: 36px;
             font-size: 14px;
@@ -1329,7 +1347,7 @@ a {
             line-height: 1.4;
             background: transparent;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 border-width: 1px;
             }
         }
@@ -1340,7 +1358,7 @@ a {
             color: $darkGray;
             letter-spacing: 0;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 font-size: 10px;
             }
 
@@ -1367,7 +1385,7 @@ a {
         font-weight: $demi;
         color: white;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 30px;
         }
 
@@ -1387,7 +1405,7 @@ a {
     align-items: stretch;
     justify-content: space-between;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         .slick-track {
             left: -117px;
 
@@ -1453,7 +1471,7 @@ a {
     transition: all 0.4s;
     opacity: .5;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         width: 160px;
         padding: 20px;
         padding-bottom: 110px;
@@ -1468,7 +1486,7 @@ a {
         border: 4px solid $lightBlue;
         opacity: 1;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             border-width: 2px;
         }
 
@@ -1494,7 +1512,7 @@ a {
         height: 70px;
         box-shadow: 0 8px 34px 0 rgba(19, 164, 181, 0.18);
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             width: calc(100% - 40px);
             font-size: 12px;
             height: 35px;
@@ -1512,7 +1530,7 @@ a {
         background: $lightBlue;
         transition: all 0.3s;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             width: 2px;
             height: 120px;
         }
@@ -1526,7 +1544,7 @@ a {
         border-radius: 8px;
         background-size: contain;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             height: 220px;
             background-size: cover;
 
@@ -1546,7 +1564,7 @@ a {
         font-size: 31px;
         color: $darkGray;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 16px;
         }
 
@@ -1561,7 +1579,7 @@ a {
         font-size: 21px;
         color: $darkGray;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 10px;
         }
     }
@@ -1577,7 +1595,7 @@ a {
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         > .contact {
             width: 100%;
         }
@@ -1588,7 +1606,7 @@ a {
     margin-top: 505px;
     padding-bottom: 150px;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         margin-top: 380px;
     }
 
@@ -1601,7 +1619,7 @@ a {
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         width: 50%;
     }
 
@@ -1609,7 +1627,7 @@ a {
         display: flex;
         margin-top: 70px;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             flex-wrap: wrap;
             margin-top: 24px;
         }
@@ -1617,7 +1635,7 @@ a {
         > * + * {
             margin-left: 100px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 margin-left: 0;
             }
         }
@@ -1630,7 +1648,7 @@ a {
         margin: 0;
         color: white;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 12px;
         }
 
@@ -1644,14 +1662,14 @@ a {
         font-weight: $regular;
         color: white;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 15px;
         }
 
         &_big {
             font-size: 40px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 font-size: 18px;
             }
         }
@@ -1672,7 +1690,7 @@ a {
         letter-spacing: 0.35px;
         line-height: 1;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 12px;
             line-height: 1.4;
             font-weight: $medium;
@@ -1692,7 +1710,7 @@ a {
     z-index: 9;
     flex-wrap: wrap;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         margin-top: 30px;
     }
 }
@@ -1712,7 +1730,7 @@ a {
     overflow: scroll;
     transition: all 0.4s;
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         padding: 2rem 1rem;
         box-sizing: border-box;
         max-height: 100%;
@@ -1726,7 +1744,7 @@ a {
     &__icon {
         cursor: pointer;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             svg {
                 width: 15px;
                 height: 15px;
@@ -1744,7 +1762,7 @@ a {
         & + * {
             margin-top: 116px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 margin-top: 26px;
             }
         }
@@ -1758,7 +1776,7 @@ a {
         line-height: 1;
         margin: 0;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 20px;
         }
     }
@@ -1770,14 +1788,14 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             height: 180px;
         }
 
         & + * {
             margin-top: 100px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 margin-top: 38px;
             }
         }
@@ -1789,7 +1807,7 @@ a {
     flex-direction: column;
     width: calc((100% / 2) - 40px);
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         width: 100%;
 
         & + * {
@@ -1809,7 +1827,7 @@ a {
         width: 60%;
         background-position: center;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             height: 190px;
         }
 
@@ -1823,7 +1841,7 @@ a {
         font-size: 31px;
         color: $darkGray;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 15px;
         }
 
@@ -1837,7 +1855,7 @@ a {
         font-size: 21px;
         color: $darkGray;
 
-        @media (max-width: 430px) {
+        @media (max-width: 800px) {
             font-size: 12px;
         }
 
@@ -1845,7 +1863,7 @@ a {
             margin: 0;
             line-height: 27px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 line-height: 1.4;
             }
 
@@ -1857,7 +1875,7 @@ a {
         & + * {
             margin-top: 90px;
 
-            @media (max-width: 430px) {
+            @media (max-width: 800px) {
                 margin-top: 40px;
             }
         }
@@ -1886,7 +1904,7 @@ a {
         color: #00DAEF;
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 800px) {
         width: 128px;
         height: 35px;
         font-size: 12px;
@@ -1907,7 +1925,7 @@ a {
 
 .main__header__nav {
     .main__header__sign__in {
-        @media (min-width: 430px) {
+        @media (min-width: 800px) {
             display: none;
         }
     }
